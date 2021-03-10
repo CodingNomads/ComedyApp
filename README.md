@@ -1,6 +1,6 @@
 # Sample Comedy App with Spring MVC
 
-This is a sample application used in CodingNomads [Advanced Java and Spring Framework course](https://platform.codingnomads.co/learn/).
+This is a sample application used in CodingNomads [Advanced Java and Spring Framework course](https://platform.codingnomads.co/learn/) (in development).
 
 ## Running the App
 
