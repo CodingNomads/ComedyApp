@@ -21,17 +21,17 @@ public class ComedyController {
     @Autowired
     ComedyService service;
 
-    // This method will be invoked when the baseUrl + "/comedy" is hit
+    	// This method will be invoked when the baseUrl + "/comedy" is hit
 	@GetMapping("/comedy")
 	public String comedy (Model model) {
 	    // Get a random joke from the service
-		String joke = service.getRandomJoke();
+	    String joke = service.getRandomJoke();
 
-		// Attach that joke to the data model
-		model.addAttribute("joke", joke);
+	    // Attach that joke to the data model
+	    model.addAttribute("joke", joke);
 
-		// Return the view "getting_started/comedy.html"
-        // this view can be found at "src/main/resources/templates/getting_started/comedy.html
-		return "getting_started/comedy";
+	    // Return the view "getting_started/comedy.html"
+            // this view can be found at "src/main/resources/templates/getting_started/comedy.html
+	    return "getting_started/comedy";
 	}
 }
