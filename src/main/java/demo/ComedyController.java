@@ -23,7 +23,7 @@ public class ComedyController {
 
     // This method will be invoked when the baseUrl + "/comedy" is hit
 	@GetMapping("/comedy")
-	public String greeting (Model model) {
+	public String comedy (Model model) {
 	    // Get a random joke from the service
 		String joke = service.getRandomJoke();
 
