@@ -19,13 +19,13 @@ public class ComedyController {
 
     // The line below "injects" a bean of "demo.ComedyService" into this class
     @Autowired
-    ComedyService service;
+    ComedyService comedyService;
 
     // This method will be invoked when the baseUrl + "/comedy" is hit
     @GetMapping("/comedy")
     public String comedy (Model model) {
 	// Get a random joke from the service
-	String joke = service.getRandomJoke();
+	String joke = comedyService.getRandomJoke();
 
 	// Attach that joke to the data model
 	model.addAttribute("joke", joke);
