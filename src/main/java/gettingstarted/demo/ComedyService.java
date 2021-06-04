@@ -1,7 +1,6 @@
-package demo;
+package gettingstarted.demo;
 
 import org.springframework.stereotype.Service;
-
 import java.util.Random;
 
 // @Service annotation indicates this a Spring Bean to be "injected" into other class
@@ -25,7 +24,7 @@ public class ComedyService {
     }
 
     // simple method that populates the jokes array with a few jokes
-    private void populateJokes() {
+    private void populateJokes(){
         jokes[0] = "Q: Did you hear about the mathematician who’s afraid of negative numbers? " +
                 "\n\nA: He’ll stop at nothing to avoid them.";
         jokes[1] = "Q: How many programmers does it take to change a light bulb?" +
